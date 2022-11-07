@@ -17,6 +17,7 @@
             Hello ${sessionScope.account.displayname},  click 
             <a href="logout">here</a> 
             to logout.
+            <a href="lecturer/timetable?lid=1">Timetable (Thời khoá biểu)</a>
         </c:if>
         <c:if test="${sessionScope.account eq null}">
             you are not logged in yet!
