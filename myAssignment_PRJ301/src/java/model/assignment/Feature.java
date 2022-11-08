@@ -6,10 +6,11 @@ package model.assignment;
 
 import java.util.ArrayList;
 
-public class Room {
-     private int id;
+public class Feature {
+    private int id;
     private String name;
-    private ArrayList<Session> sessions = new ArrayList<>();
+    private String url;
+    private ArrayList<Role> roles = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -27,11 +28,20 @@ public class Room {
         this.name = name;
     }
 
-    public ArrayList<Session> getSessions() {
-        return sessions;
+    public String getUrl() {
+        return url;
     }
 
-    public void setSessions(ArrayList<Session> sessions) {
-        this.sessions = sessions;
+    public void setUrl(String url) {
+        this.url = url;
     }
+
+    public ArrayList<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(ArrayList<Role> roles) {
+        this.roles = roles;
+    }
+    
 }

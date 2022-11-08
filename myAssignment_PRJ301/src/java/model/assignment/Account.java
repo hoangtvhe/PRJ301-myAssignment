@@ -4,15 +4,32 @@
  */
 package model.assignment;
 
-/**
- *
- * @author sonnt
- */
+import java.util.ArrayList;
+
 public class Account {
-    private String username;
+   private String username;
     private String password;
     private String displayname;
+    private String id;
+    private ArrayList<Role> roles = new ArrayList<>();
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+ 
+    public ArrayList<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(ArrayList<Role> roles) {
+        this.roles = roles;
+    }
+    
     public String getUsername() {
         return username;
     }

@@ -7,10 +7,6 @@ package model.assignment;
 import java.sql.Date;
 import java.util.ArrayList;
 
-/**
- *
- * @author Ngo Tung Son
- */
 public class Session {
     private int id;
     private Lecturer lecturer;
@@ -19,8 +15,8 @@ public class Session {
     private Date date;
     private Group group;
     private int index;
-    private boolean attandated; 
-    private ArrayList<Attandance> attandances = new ArrayList<>();
+    private boolean attended; 
+    private ArrayList<Attendance> attendances = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -78,20 +74,25 @@ public class Session {
         this.index = index;
     }
 
-    public boolean isAttandated() {
-        return attandated;
+    public boolean isAttended() {
+        return attended;
     }
 
-    public void setAttandated(boolean attandated) {
-        this.attandated = attandated;
+    public void setAttended(boolean attended) {
+        this.attended = attended;
     }
 
-    public ArrayList<Attandance> getAttandances() {
-        return attandances;
+    public ArrayList<Attendance> getAttendances() {
+        return attendances;
     }
 
-    public void setAttandances(ArrayList<Attandance> attandances) {
-        this.attandances = attandances;
+    public void setAttendances(ArrayList<Attendance> attendances) {
+        this.attendances = attendances;
+    }
+
+    @Override
+    public String toString() {
+        return "Session{" + "id=" + id + ", lecturer=" + lecturer + ", room=" + room + ", timeslot=" + timeslot + ", date=" + date + ", group=" + group + ", index=" + index + ", attended=" + attended + ", attendances=" + attendances + '}';
     }
     
 }

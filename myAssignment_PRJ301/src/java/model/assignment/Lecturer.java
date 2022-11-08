@@ -6,15 +6,20 @@ package model.assignment;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Ngo Tung Son
- */
 public class Lecturer {
-    private int id;
+     private int id;
     private String name;
+    private String account;
     private ArrayList<Group> groups = new ArrayList<>();
     private ArrayList<Session> sessions = new ArrayList<>();
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
 
     public int getId() {
         return id;

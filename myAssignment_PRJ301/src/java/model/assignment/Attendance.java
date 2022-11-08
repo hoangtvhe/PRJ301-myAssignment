@@ -6,13 +6,9 @@ package model.assignment;
 
 import java.util.Date;
 
-/**
- *
- * @author Ngo Tung Son
- */
-public class Attandance {
+public class Attendance {
     private Student student;
-    private model.assignment.Session session;
+    private Session session;
     private boolean present;
     private String description;
     private Date record_time;
@@ -25,11 +21,11 @@ public class Attandance {
         this.student = student;
     }
 
-    public model.assignment. Session getSession() {
+    public Session getSession() {
         return session;
     }
 
-    public void setSession(model.assignment. Session session) {
+    public void setSession(Session session) {
         this.session = session;
     }
 

@@ -6,12 +6,8 @@ package model.assignment;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Ngo Tung Son
- */
 public class Subject {
-    private int id;
+     private int id;
     private String name;
     private ArrayList<Group> groups = new ArrayList<>();
 
